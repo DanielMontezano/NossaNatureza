@@ -1,0 +1,165 @@
+/* controle geral da pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estiliza o header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* estiliza o body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f0fdf0;
+    color: #2e4d2e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* garante que o html e o body ocupem toda a altura da tela */
+html, body {
+    height: 100%;
+}
+
+/* serve unicamente para empurrar o footer até o final da pagina */
+main {
+    flex: 1;
+}
+
+/* alinha o titulo e a logo ao centro horizontalmente */
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    padding-right: 30px;
+}
+
+/* estiliza o titulo principal */
+.topo h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    transform: translateX(-20px);
+}
+
+/* estiliza a lista de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+/* espaçamento entre os itens da lista */
+nav ul li {
+    margin: 0 12px;
+    position: relative;
+}
+
+/* estiliza os links de navegação */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* altera o fundo ao passar o mouse nos links */
+nav ul li a:hover {
+    background-color: #388e3c;
+}
+
+/* da um espaçamento entre o icone de login e a palavra logar */
+.logar-btn a i {
+    margin-right: 4px;
+}
+
+/* seta e transição para girar */
+.dropdown .arrow {
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* gira a seta 180 graus ao passar o mouse */
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
+}
+
+/* mostra o menu "logar" e posicionado abaixo do botao "logar" */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #2e7d32;
+    color: white;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1337;
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* estilo dos links do menu "logar" */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* muda a cor do link ao passar o mouse */
+.dropdown-menu a:hover {
+    background-color: #388e3c;
+}
+
+/* exibe o menu com animação no hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* estiliza o rodape */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+}
+
+/* responsividade global */
+@media (max-width: 635px) {
+    .topo {
+        flex-direction: column;
+        margin-left: 35px;
+    }
+
+    .logo {
+        padding-right: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

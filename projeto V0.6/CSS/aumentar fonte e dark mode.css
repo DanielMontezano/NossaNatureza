@@ -1,0 +1,85 @@
+/* DARK MODE */
+
+/* botão de alternar modo */
+#modoToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1337;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-mode nav ul li a {
+    color: #f0f0f0;
+}
+
+body.dark-mode .membro h3{
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+body.dark-mode .hero,
+body.dark-mode .sobre,
+body.dark-mode .projetos,
+body.dark-mode .doacoes,
+body.dark-mode .quem-somos,
+body.dark-mode .impacto,
+body.dark-mode .voluntariado {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+body.dark-mode .card,
+body.dark-mode .conteudo-quem-somos img {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+}
+
+
+/* AUMENTAR FONTE */
+
+#aumentarFonte {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1337;
+    font-size: 1rem;
+}
+
+body.aumentar-fonte {
+    font-size: 1.2em;
+}
+
+body.aumentar-fonte h1,
+body.aumentar-fonte h2,
+body.aumentar-fonte p,
+body.aumentar-fonte li,
+body.aumentar-fonte a {
+    font-size: 1.1em;
+}
+
+
+

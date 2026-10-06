@@ -1,0 +1,180 @@
+#login {
+    width: 500px;
+    margin: 15vh auto 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 30px;
+    background-color: whitesmoke;
+    border-radius: 15px;  
+    font-size: 12px;
+    min-height: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#login h1 {
+    color: #0f2027;
+    text-align: center;
+    font-size: 2.5rem;  
+    margin-bottom: 15px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;  
+    display: block;
+    font-size: 14px;  
+    padding: 15px 15px;  
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;  
+}
+
+
+.input-control input:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.input-control input:focus {
+    outline: none;
+    border-color: grey;  
+    box-shadow: 0 4px 8px grey;  
+}
+
+.input-control.sucesso input {
+    border-color: #09c372;
+}
+
+.input-control.erro input {
+    border-color: #ff3860;
+}
+
+.input-control .erro {
+    color: #ff3860;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: block;
+}
+
+#login button {
+    padding: 12px;
+    margin-top: 15px;
+    width: 100%;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;  
+    font-size: 14px;  
+    transition: background-color 0.3s ease;
+}
+
+#login button:hover {
+    background-color: #388e3c;
+    cursor: pointer;
+}
+
+/* inicio da verificação de 2 fatores */
+.janela-2fa {
+    opacity: 0;
+    pointer-events: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 400px;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1339;
+    text-align: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.janela-2fa.mostrar {
+    opacity: 1;
+    pointer-events: auto; 
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+.janela-2fa h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #0f2027;
+}
+
+.janela-2fa p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.janela-2fa input {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.janela-2fa button {
+    padding: 10px;
+    margin-top: 15px;
+    width: 100%;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;  
+    font-size: 15px;  
+    transition: background-color 0.3s ease;
+}
+
+.janela-2fa button:hover {
+    background-color: #388e3c;
+    cursor: pointer;
+}
+
+.fundo-2fa {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1338; 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.fundo-2fa.mostrar {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+/* fim da verificação de 2 fatores */
+
+/* responsividade para celulares (usado para o formulario) */
+@media (max-width: 547px) {
+    #login {
+        width: 90%;
+        padding: 20px;
+        margin: 40px auto;
+    }
+
+    #login h1 {
+        font-size: 2rem;
+    }
+
+    .input-control input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #login button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}

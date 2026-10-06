@@ -1,0 +1,126 @@
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../Imagens/floresta.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 60px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.botao-destaque {
+    background-color: #fdd835;
+    color: #2e7d32;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.botao-destaque:hover {
+    background-color: #fbc02d;
+}
+
+
+.sobre {
+    padding: 60px 30px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 1.1rem;
+}
+
+.projetos {
+    background-color: #f0fdf0;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;    
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #008d13;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* responsividade para o site inteiro em telas pequenas */
+@media (max-width: 1020px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .botao-destaque {
+        padding: 10px 20px;
+    }
+
+    .cards {
+        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 650px;
+    }
+}
+

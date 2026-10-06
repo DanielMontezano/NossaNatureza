@@ -1,0 +1,40 @@
+#historia {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #f0f9f4; /* tom verde claro */
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+    color: #2d4739;
+  }
+  
+  #historia h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1b3528;
+    border-left: 5px solid #4caf50;
+    padding-left: 15px;
+  }
+  
+  #historia p {
+    line-height: 1.7;
+    font-size: 1.05em;
+    margin-bottom: 15px;
+  }
+  
+  /* responsividade para historia */
+  @media (max-width: 822px) {
+    #historia {
+      padding: 20px;
+    }
+  
+    #historia h2 {
+      font-size: 1.6em;
+    }
+  
+    #historia p {
+      font-size: 1em;
+    }
+  }
+  

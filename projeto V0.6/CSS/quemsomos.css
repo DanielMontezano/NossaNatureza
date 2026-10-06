@@ -1,0 +1,78 @@
+.quem-somos {
+    padding: 60px 30px;
+    background-color: #9ae9a0;
+    text-align: center;
+}
+
+.quem-somos h2 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 40px;
+}
+
+.descricao {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #237723;
+}
+
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.membro {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 220px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.membro h3 {
+    color: #2e7d32;
+    margin: 10px 0 5px;
+}
+
+.membro p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.membro .arroba {
+    font-weight: bold;
+    color: #2e7d32;
+    font-size: 0.95rem;
+}
+
+.visao {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.visao h3 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.visao p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    color: #2e4d2e;
+}
+
+/* responsividade para a caixa de equipe */
+@media (max-width: 635px) {
+    .equipe {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Imagens/logo.png">
+    <title>Cadastro - Nossa Natureza ONG</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/GLOBAL CSS.css">
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+    <link rel="stylesheet" href="../CSS/aumentar fonte e dark mode.css">
+
+    <!-- JAVASCRIPT -->
+    <script defer src="../JS/cadastro.js"></script>
+    <script defer src="../JS/aumentar fonte e dark mode.js"></script>
+
+    <!-- recursos externos -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- botões globais -->
+    <button id="modoToggle">Modo Escuro</button>
+    <button id="aumentarFonte">A+</button>
+
+    <header>
+        <div class="topo">
+            <div class="logo">
+                <img src="../Imagens/logo.png" width="90" height="90" alt="Logo da ONG">
+            </div>
+            <h1>Nossa Natureza</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li class="dropdown logar-btn">
+                    <a href="" onclick="return false">
+                        <i class="fa-solid fa-user"></i> Logar <span class="arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="cadastro.html">Cadastrar</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <!-- 1° formulario -->
+            <form id="cadastro" action="/">
+                <h1>Cadastro</h1>
+                <div class="input-control">
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo">
+                    <div class="erro"></div>
+                </div>
+                <div class="input-control">
+                    <input type="text" id="cpf" name="cpf" placeholder="CPF" autocomplete="off" inputmode="numeric">
+                    <div class="erro"></div>
+                </div>
+                <div class="input-control">
+                    <input type="text" id="data-de-nascimento" name="data de nascimento" placeholder="Data de Nascimento">
+                    <div class="erro"></div>
+                </div>
+                <div class="input-control">
+                    <input type="text" id="email" name="email" placeholder="E-mail">
+                    <div class="erro"></div>
+                </div>
+                <div class="input-control">
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                    <div class="erro"></div>
+                </div>
+                <div class="input-control">
+                    <input type="password" id="senha2" name="senha2" placeholder="Confirmar Senha">
+                    <div class="erro"></div>
+                </div>
+                <button type="button" id="botao-cadastrar" name="botao-cadastrar">Continuar</button>
+            </form>
+
+            <!-- 2° formulario -->
+            <form id="cadastro-endereco">
+                <h1>Cadastro</h1>
+                <div class="input-control">
+                    <input type="text" id="cep" name="cep" placeholder="CEP">
+                    <div class="erro"></div>
+                </div>
+                <div class="input-control">
+                    <input type="text" id="estado" name="estado" placeholder="Estado">
+                    <div class="erro"></div>
+                </div>
+                <div class="input-control">
+                    <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+                    <div class="erro"></div>
+                </div>
+                <div class="input-control">
+                    <input type="text" id="bairro" name="bairro" placeholder="Bairro">
+                    <div class="erro"></div>
+                </div>
+                <div class="input-control">
+                    <input type="text" id="rua" name="rua" placeholder="Rua">
+                    <div class="erro"></div>
+                </div>
+                <button type="button" id="botao-cadastrar2">Finalizar Cadastro</button>
+            </form>
+
+            <!-- autenticacao de 2 fatores -->
+            <div class="fundo-2fa" id="fundo-2fa">
+                <div id="janela-2fa" class="janela-2fa">
+                    <h1>Autenticação de 2 fatores</h1>
+                    <p>Crie seu código de autenticação</p>
+                    <div class="input-control">
+                        <input type="text" id="codigo-2fa" maxlength="6" placeholder="Código de 6 dígitos">
+                        <div class="erro"></div>
+                    </div>
+                    <button id="botao-criar-codigo">Confirmar</button>
+                </div>
+            </div>    
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 ONG Nossa Natureza - Todos os direitos reservados</p>
+        <p>Contato: contatonossanatureza@gmail.com</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.container-info-usuario {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.container-info-usuario h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #1b1b1b;
+}
+
+#info-usuario {
+    list-style: none;
+    padding: 0;
+}
+
+#info-usuario li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #333;
+}
